@@ -15,7 +15,7 @@ def longest_subsequece(src, dest):
 
 # for printing the array
 def print_da(mem, src, dest):
-	m, n = len(src), len(dest)
+	m, n = len(src) + 1, len(dest) + 1
 	for i in xrange(1,m):
 		mem[i][0] = src[i-1]
 	for i in xrange(1,n):
@@ -27,4 +27,4 @@ def print_da(mem, src, dest):
 		print ''
 	print ''
 
-longest_subsequece('abby', 'abbywi')
+longest_subsequece('msbanik', 'banik')
